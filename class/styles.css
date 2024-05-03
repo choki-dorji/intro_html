@@ -1,0 +1,100 @@
+/** @format */
+
+@charset "utf-8";
+
+/*Import the fonts for usage*/
+@font-face {
+  font-family: Precious;
+  src: url(Precious.ttf) format("truetype");
+}
+@font-face {
+  font-family: Avara;
+  src: url(Avara.ttf) format("truetype");
+}
+@font-face {
+  font-family: Process;
+  src: url(Process-magenta.otf) format("opentype");
+}
+
+* {
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: table;
+  background-color: #292222;
+}
+
+.navbar li {
+  display: table-cell;
+  text-align: center;
+  margin-right: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 0;
+}
+
+.header {
+  background-image: url("background.jpg");
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-size: cover;
+  color: rgb(28, 21, 21);
+  text-align: center;
+  padding: 100px 0;
+}
+.main-content {
+  display: flex;
+}
+.content {
+  flex: 3;
+  padding: 20px;
+  background-color: #f7e2e2;
+  font-size: 1.7em;
+  border: 2px solid #292222;
+}
+.t1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(102, 28, 232);
+}
+.p1 {
+  font-family: monospace;
+  color: #bc0606;
+  font-style: italic;
+}
+.t2 {
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.p2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(36, 140, 231);
+}
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: hsla(40, 34%, 88%, 0.7);
+  border: 2px solid #292222;
+}
+
+/*styling for footer*/
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a:hover,
+nav a:active {
+  color: rgba(16, 16, 16, 0.7);
+  background-color: hsla(38, 55%, 86%, 0.7);
+  padding: 10px 0;
+}

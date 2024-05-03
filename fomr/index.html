@@ -1,0 +1,176 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin-top: 240px;
+      }
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      input[type="range"],
+      input[type="time"],
+      input[type="tel"],
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px; /* Adjust spacing between label and input if needed */
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #68b46c;
+      }
+      input[type="reset"] {
+        background-color: #930808;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="reset"]:hover {
+        background-color: #ca6da0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>HTML Form</h2>
+      <!-- we will learn about action and method attribute later -->
+      <form id="myForm">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" required /><br />
+
+        <label for="date">Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+
+        <label for="range">Range:</label><br />
+        <input
+          type="range"
+          id="range"
+          name="range"
+          value="3"
+          min="1"
+          max="10" /><br />
+
+        <label for="time">Time:</label><br />
+        <input type="time" id="time" name="time" required /><br />
+
+        <label for="tel">Telephone:</label><br />
+        <input type="tel" id="tel" name="tel" required /><br />
+
+        <!-- the name for bothe input feild must be same else they will represernt different value -->
+        <!-- also field set is optional we can use if we want to group the 2 inputs -->
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+          style="margin-left: 50px"
+          required />
+        <label for="female">Female</label><br />
+
+        <div style="margin-top: 20px">
+          <label for="hobby">Hobby:</label><br />
+          <input type="checkbox" id="reading" name="hobby" value="reading" />
+          <label for="reading">Reading</label>
+          <input
+            type="checkbox"
+            style="margin-left: 50px"
+            id="sports"
+            name="hobby"
+            value="sports" />
+          <label for="sports">Sports</label>
+          <input
+            type="checkbox"
+            style="margin-left: 50px"
+            id="swimming"
+            name="hobby"
+            value="reading" />
+          <label for="swimming">Swimming</label>
+          <input
+            type="checkbox"
+            style="margin-left: 50px"
+            id="driving"
+            name="hobby"
+            value="sports" />
+          <label for="driving">Driving</label><br />
+        </div>
+
+        <div style="margin-top: 20px">
+          <label for="country">Course:</label><br />
+          <select id="course" name="course" required>
+            <option value="" selected disabled>Select a course</option>
+            <option value="sidd">SIDD</option>
+            <option value="soc">SOC</option>
+            <option value="blockchain">BLock Chain</option>
+            <option value="ai">AI</option>
+            <option value="cyber">Cyber</option>
+            <option value="techno">Techno</option>
+            <option value="fullstack">FullStack</option></select
+          ><br />
+        </div>
+
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Successful");
+        });
+    </script>
+  </body>
+</html>

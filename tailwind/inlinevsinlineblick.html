@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inline vs. Inline-block</title>
+<style>
+    /* Example for inline */
+    .inline-example span {
+        display: inline;
+        width: 100px; /* Won't have any effect */
+        height: 500px; /* Won't have any effect */
+        background-color: lightblue;
+        margin: 10px; /* Only affects left and right */
+        padding: 10px; /* Only affects left and right */
+        border: 1px solid black;
+    }
+
+    /* Example for inline-block */
+    .inline-block-example div {
+        display: inline-block;
+        width: 100px; /* Can set width */
+        height: 500px; /* Can set height */
+        background-color: lightcoral;
+        margin: 10px; /* Affects all sides */
+        padding: 10px; /* Affects all sides */
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <h2>Inline Example:</h2>
+    <div class="inline-example">
+        This is a <span>span</span> element with inline display.
+    </div>
+
+    <h2>Inline-block Example:</h2>
+    <div class="inline-block-example">
+        This is a <div>div</div> element with inline-block display.
+    </div>
+</body>
+</html>

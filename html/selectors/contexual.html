@@ -1,0 +1,48 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Contextual Selector Examples</title>
+    <style>
+      /* Child Selector */
+      ul > li {
+        color: red;
+      }
+
+      /* Adjacent Sibling Selector */
+      div + p {
+        font-weight: bold;
+      }
+
+      /* General Sibling Selector */
+      div ~ p {
+        font-style: italic;
+      }
+      article > * {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Child Selector -->
+    <ul>
+      <li>This is a list item</li>
+      <li>This is another list item</li>
+    </ul>
+
+    <!-- Adjacent Sibling Selector -->
+    <div>This is a div</div>
+    <p>This paragraph is directly after the div and will be bold.</p>
+
+    <!-- General Sibling Selector -->
+    <div>This is another div</div>
+    <p>This paragraph comes after the second div and will be italic.</p>
+    <article>
+      <h1>hello</h1>
+      <h1>hi</h1>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Attribute Selector Example</title>
+    <style>
+      /* Selecting elements with a specific attribute */
+      [data-type1="button"] {
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* Selecting elements with a specific attribute value */
+      [data-type1="link"] {
+        color: #007bff;
+        text-decoration: none;
+      }
+      [name-_="bigbutton"] {
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Example button with data-type attribute -->
+    <button data-type1="button">Click me</button>
+
+    <!-- Example link with data-type attribute -->
+    <a href="#" data-type1="link">This is a link</a>
+
+    <!-- Another button with different data-type attribute -->
+    <button data-type1="button">Submit</button>
+    <button name-type="bigbutton">look here</button>
+  </body>
+</html>

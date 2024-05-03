@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Z-Index Visualization</title>
+<!-- Include Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  body {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<div class="flex justify-center items-center min-h-screen">
+  <div class="relative w-72 h-72 perspective">
+    <div class="absolute w-full h-full flex justify-center items-center transform-style">
+      <div class="box bg-blue-400" style="transform: translateZ(120px);">
+        <span class="text-white text-2xl">1</span>
+      </div>
+      <div class="box bg-blue-500" style="transform: translateZ(80px);">
+        <span class="text-white text-2xl">2</span>
+      </div>
+      <div class="box bg-blue-600" style="transform: translateZ(40px);">
+        <span class="text-white text-2xl">3</span>
+      </div>
+      <div class="box bg-blue-700" style="transform: translateZ(0px);">
+        <span class="text-white text-2xl">4</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center mt-4">
+  <button onclick="toggleRotation()" class="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600">Toggle Rotation</button>
+</div>
+
+<script>
+  let isRotating = true;
+  const container = document.querySelector('.transform-style');
+
+  function toggleRotation() {
+    if (isRotating) {
+      container.style.animationPlayState = 'paused';
+    } else {
+      container.style.animationPlayState = 'running';
+    }
+    isRotating = !isRotating;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Border Box, Padding Box, Content Box</title>
+<style>
+  /* Define styles for the box */
+  .box {
+    width: 200px; /* Set width of the box */
+    height: 100px; /* Set height of the box */
+    margin: 20px; /* Add margin for spacing */
+    background-color: lightgray; /* Set background color */
+    float: left; /* Float the boxes to the left for horizontal alignment */
+  }
+
+  /* Apply border-box value for the border-clip property */
+  .box.border-box {
+    border: 10px solid black; /* Add a black border around the box */
+    box-sizing: border-box; /* Ensure border-box behavior */
+  }
+
+  /* Apply padding-box value for the border-clip property */
+  .box.padding-box {
+    padding: 20px; /* Add padding to the box */
+    border: 10px solid black; /* Add a black border around the box */
+    box-sizing: padding-box; /* Ensure padding-box behavior */
+  }
+
+  /* Apply content-box value for the border-clip property */
+  .box.content-box {
+    padding: 20px; /* Add padding to the box */
+    border: 10px solid black; /* Add a black border around the box */
+    box-sizing: content-box; /* Ensure content-box behavior */
+  }
+
+  /* Clear floats to prevent layout issues */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+</head>
+<body>
+
+<!-- Box with border-box behavior -->
+<div class="box border-box">
+  <h2>Border Box</h2>
+  <p>This box has a border-box behavior, meaning the border is included in the box's dimensions.</p>
+</div>
+
+<!-- Box with padding-box behavior -->
+<div class="box padding-box">
+  <h2>Padding Box</h2>
+  <p>This box has a padding-box behavior, meaning padding and border are included in the box's dimensions.</p>
+</div>
+
+<!-- Box with content-box behavior -->
+<div class="box content-box">
+  <h2>Content Box</h2>
+  <p>This box has a content-box behavior, meaning content is included in the box's dimensions, and padding and border extend beyond the specified width and height.</p>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>

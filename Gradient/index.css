@@ -1,0 +1,132 @@
+div{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 44px;
+}
+
+.linear {
+    background-image: linear-gradient(to right, #f7b485, #201502);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.linearleft{
+    background-image: linear-gradient(to bottom right, #f76a06, #201502);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.angles {
+    background-image: linear-gradient(45deg, #f76a06, #201502);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.multi {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+.styled-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.styled-link:hover {
+    background-color: #45a049;
+}
+
+/* .linear{
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+
+    /* Set some additional styles for demonstration */
+    /* width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+} */ 
+
+.evenlyspaced {
+    background-image:radial-gradient(#f6821f,#002060,#1fd137);
+    height: 600px;
+}
+.differentlyspaced {
+    background-image: radial-gradient(#f6821f
+5%,#002060 15%,#1fd137 60%);
+height: 600px;
+
+}
+
+.normal{
+    background-image:
+radial-gradient(at 60%
+55%,#f6821f,#002060,#1fd137);
+height: 600px;
+}
+.closest{
+    background-image:
+radial-gradient(closest-side at 60%
+55%,#f6821f,#002060,#1fd137);
+height: 600px;
+}
+
+.farther {
+    background-image:
+radial-gradient(farthest-side at 60%
+55%,#f6821f,#002060,#1fd137);
+height: 600px;
+}
+.closestcorner{
+    background-image:
+radial-gradient(closest-corner at 60%
+55%,#f6821f,#002060,#1fd137);
+height: 600px;
+}
+
+.Farthercorner{
+    background-image:
+radial-gradient(farthest-corner at 60%
+55%,#f6821f,#002060,#1fd137);
+height: 600px;
+}
+
+.threecolors{
+    background-image:conic-gradient(#f6821f,#002060,#1fd137);
+    height: 300px;}
+
+.threecolorswithdegree{
+    background-image: conic-gradient(#f6821f
+10deg,#002060 160deg,#1fd137 180deg);
+height: 300px;}
+
+.piechart{
+    background-image: conic-gradient(#f6821f
+0deg,#271302 45deg,#060a11 45deg,#446bb9
+300deg,#1fd137 310deg);
+border-radius: 50%;
+height: 300px;
+}
+
+.withangle{
+    background-image: conic-gradient(from 90deg,
+#f6821f,#002060,#1fd137);
+height: 300px;
+}
+
+.center{
+    background-image: conic-gradient(at 20% 25%,
+#f6821f ,#002060,#1fd137);
+height: 300px;
+}

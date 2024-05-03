@@ -1,0 +1,59 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    margin: 20px;
+    transition: transform 0.5s;
+  }
+  
+  .translateX {
+    transform: translateX(50px);
+  }
+  
+  .translateY {
+    transform: translateY(50px);
+  }
+  
+  .translateZ {
+    transform: translateZ(50px);
+  }
+  
+  .translate3d {
+    transform: translate3d(50px, 50px, 50px);
+  }
+  
+  .scaleX {
+    transform: scaleX(1.5);
+  }
+  
+  .scaleY {
+    transform: scaleY(1.5);
+  }
+  
+  .scaleZ {
+    transform: scaleZ(1.5);
+  }
+  
+  .scale3d {
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  
+  .rotateX {
+    transform: rotateX(45deg);
+  }
+  
+  .rotateY {
+    transform: rotateY(45deg);
+  }
+  
+  .rotateZ {
+    transform: rotateZ(45deg);
+  }
+  
+  .rotate3d {
+    transform: rotate3d(1, 1, 1, 45deg);
+  }
+  

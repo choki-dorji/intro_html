@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Margin Auto Examples</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      z-index: 1; /* Ensure the box appears above buttons */
+    }
+
+    .btn-container {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+      margin: 0 5px;
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+
+  <div class="btn-container">
+    <button class="btn" onclick="applyMargin('m-auto')">m-auto</button>
+    <button class="btn" onclick="applyMargin('mt-auto')">Bottom Center</button>
+    <button class="btn" onclick="applyMargin('mb-auto')">Top Center</button>
+    <button class="btn" onclick="applyMargin('ml-auto')">Right Center</button>
+    <button class="btn" onclick="applyMargin('mr-auto')">Left Center</button>
+  </div>
+
+  <div id="box" class="box bg-blue-300">
+    This is the content
+  </div>
+
+  <script>
+    function applyMargin(className) {
+      const box = document.getElementById('box');
+      // Remove all margin classes
+      box.classList.remove('m-auto', 'mx-auto', 'my-auto', 'mt-auto', 'mb-auto', 'ml-auto', 'mr-auto');
+      // Apply the selected margin class
+      box.classList.add(className);
+    }
+  </script>
+
+</body>
+</html>

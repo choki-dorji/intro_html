@@ -1,0 +1,30 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    margin: 20px;
+  }
+  
+  .translate {
+    transform: translate(50px, 50px);
+  }
+  
+  .rotate {
+    transform: rotate(45deg);
+  }
+  
+  .scale {
+    transform: scale(1.5, 1.5);
+  }
+  
+  .skew {
+    transform: skew(10deg, 10deg);
+  }
+  
+  .matrix {
+    transform: matrix(1, 0.1763269807, 0.1763269807, 1, 0, 0);
+  }
+  
